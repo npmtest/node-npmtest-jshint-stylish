@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-jshint-stylish/jshint-stylish/index.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-jshint-stylish/node_modules/jshint-stylish/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-jshint-stylish">npmtest-jshint-stylish (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-jshint-stylish/jshint-stylish/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-jshint-stylish/node_modules/jshint-stylish/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">18.42% <small>(7 / 38)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-jshint-stylish/jshint-stylish/</a> &#187; index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-jshint-stylish/node_modules/jshint-stylish/</a> » index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -375,78 +373,79 @@ var plur = require('plur');
 var beeper = require('beeper');
 &nbsp;
 module.exports = {
-	toString: <span class="fstat-no" title="function not covered" >function () {</span>
-<span class="cstat-no" title="statement not covered" >		return __filename;</span>
+	toString: <span class="fstat-no" title="function not covered">function () {</span>
+<span class="cstat-no" title="statement not covered">		return __filename;</span>
 	},
-	reporter: <span class="fstat-no" title="function not covered" >function (result, config, options) {</span>
-<span class="cstat-no" title="statement not covered" >		var total = result.length;</span>
-<span class="cstat-no" title="statement not covered" >		var ret = '';</span>
-<span class="cstat-no" title="statement not covered" >		var headers = [];</span>
-<span class="cstat-no" title="statement not covered" >		var prevfile;</span>
-<span class="cstat-no" title="statement not covered" >		var errorCount = 0;</span>
-<span class="cstat-no" title="statement not covered" >		var warningCount = 0;</span>
+	reporter: <span class="fstat-no" title="function not covered">function (result, config, options) {</span>
+<span class="cstat-no" title="statement not covered">		var total = result.length;</span>
+<span class="cstat-no" title="statement not covered">		var ret = '';</span>
+<span class="cstat-no" title="statement not covered">		var headers = [];</span>
+<span class="cstat-no" title="statement not covered">		var prevfile;</span>
+<span class="cstat-no" title="statement not covered">		var errorCount = 0;</span>
+<span class="cstat-no" title="statement not covered">		var warningCount = 0;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		options = options || {};</span>
+<span class="cstat-no" title="statement not covered">		options = options || {};</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		ret += table(result.map(<span class="fstat-no" title="function not covered" >function (el, i) {</span></span>
-<span class="cstat-no" title="statement not covered" >			var err = el.error;</span>
+<span class="cstat-no" title="statement not covered">		ret += table(result.map(<span class="fstat-no" title="function not covered">function (el, i) {</span></span>
+<span class="cstat-no" title="statement not covered">			var err = el.error;</span>
 			// E: Error, W: Warning, I: Info
-<span class="cstat-no" title="statement not covered" >			var isError = err.code &amp;&amp; err.code[0] === 'E';</span>
+<span class="cstat-no" title="statement not covered">			var isError = err.code &amp;&amp; err.code[0] === 'E';</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			var line = [</span>
+<span class="cstat-no" title="statement not covered">			var line = [</span>
 				'',
 				chalk.gray('line ' + err.line),
 				chalk.gray('col ' + err.character),
 				isError ? chalk.red(err.reason) : chalk.blue(err.reason)
 			];
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			if (el.file !== prevfile) {</span>
-<span class="cstat-no" title="statement not covered" >				headers[i] = el.file;</span>
+<span class="cstat-no" title="statement not covered">			if (el.file !== prevfile) {</span>
+<span class="cstat-no" title="statement not covered">				headers[i] = el.file;</span>
 			}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			if (options.verbose) {</span>
-<span class="cstat-no" title="statement not covered" >				line.push(chalk.gray('(' + err.code + ')'));</span>
+<span class="cstat-no" title="statement not covered">			if (options.verbose) {</span>
+<span class="cstat-no" title="statement not covered">				line.push(chalk.gray('(' + err.code + ')'));</span>
 			}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			if (isError) {</span>
-<span class="cstat-no" title="statement not covered" >				errorCount++;</span>
+<span class="cstat-no" title="statement not covered">			if (isError) {</span>
+<span class="cstat-no" title="statement not covered">				errorCount++;</span>
 			} else {
-<span class="cstat-no" title="statement not covered" >				warningCount++;</span>
+<span class="cstat-no" title="statement not covered">				warningCount++;</span>
 			}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			prevfile = el.file;</span>
+<span class="cstat-no" title="statement not covered">			prevfile = el.file;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			return line;</span>
+<span class="cstat-no" title="statement not covered">			return line;</span>
 		}), {
 			stringLength: stringLength
-		}).split('\n').map(<span class="fstat-no" title="function not covered" >function (el, i) {</span>
-<span class="cstat-no" title="statement not covered" >			return headers[i] ? '\n' + chalk.underline(headers[i]) + '\n' + el : el;</span>
+		}).split('\n').map(<span class="fstat-no" title="function not covered">function (el, i) {</span>
+<span class="cstat-no" title="statement not covered">			return headers[i] ? '\n' + chalk.underline(headers[i]) + '\n' + el : el;</span>
 		}).join('\n') + '\n\n';
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		if (total &gt; 0) {</span>
-<span class="cstat-no" title="statement not covered" >			if (errorCount &gt; 0) {</span>
-<span class="cstat-no" title="statement not covered" >				ret += '  ' + logSymbols.error + '  ' + errorCount + ' ' + plur('error', errorCount) + (warningCount &gt; 0 ? '\n' : '');</span>
+<span class="cstat-no" title="statement not covered">		if (total &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered">			if (errorCount &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered">				ret += '  ' + logSymbols.error + '  ' + errorCount + ' ' + plur('error', errorCount) + (warningCount &gt; 0 ? '\n' : '');</span>
 			}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			ret += '  ' + logSymbols.warning + '  ' + warningCount + ' ' + plur('warning', total);</span>
+<span class="cstat-no" title="statement not covered">			ret += '  ' + logSymbols.warning + '  ' + warningCount + ' ' + plur('warning', total);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			if (options.beep) {</span>
-<span class="cstat-no" title="statement not covered" >				beeper();</span>
+<span class="cstat-no" title="statement not covered">			if (options.beep) {</span>
+<span class="cstat-no" title="statement not covered">				beeper();</span>
 			}
 		} else {
-<span class="cstat-no" title="statement not covered" >			ret += '  ' + logSymbols.success + ' No problems';</span>
-<span class="cstat-no" title="statement not covered" >			ret = '\n' + ret.trim();</span>
+<span class="cstat-no" title="statement not covered">			ret += '  ' + logSymbols.success + ' No problems';</span>
+<span class="cstat-no" title="statement not covered">			ret = '\n' + ret.trim();</span>
 		}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		console.log(ret + '\n');</span>
+<span class="cstat-no" title="statement not covered">		console.log(ret + '\n');</span>
 	}
 };
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 09:20:49 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 11:32:50 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>

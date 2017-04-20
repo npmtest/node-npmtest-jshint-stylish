@@ -1,4 +1,7 @@
-# test coverage for  [jshint-stylish (v2.2.1)](https://github.com/sindresorhus/jshint-stylish#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-jshint-stylish.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-jshint-stylish) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-jshint-stylish.svg)](https://travis-ci.org/npmtest/node-npmtest-jshint-stylish)
+# npmtest-jshint-stylish
+
+#### basic test coverage for  [jshint-stylish (v2.2.1)](https://github.com/sindresorhus/jshint-stylish#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-jshint-stylish.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-jshint-stylish) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-jshint-stylish.svg)](https://travis-ci.org/npmtest/node-npmtest-jshint-stylish)
+
 #### Stylish reporter for JSHint
 
 [![NPM](https://nodei.co/npm/jshint-stylish.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/jshint-stylish)
